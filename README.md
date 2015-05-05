@@ -1,4 +1,4 @@
-#Q. What is the vision of OSM Server?
+##Q. What is the vision of OSM Server?
 
 First of all, despite the same acronym, OSM Server has nothing to do with Open
 Street Map.  OSM, in this case, stands for Open Source Musicians, which is a
@@ -30,7 +30,18 @@ task).  Thankfully, most DAWs appear to be written in C++, so I at least know
 somewhat of what I'm getting myself into.
 
 
-#Q. What is the current status of this project?
+##Q. What about proprietary DAWs?  Will your server work with those?
+
+I chose OSC messages because they are an industry standard, and because
+it's designed for transmitting audio and MIDI data from one device/application
+to another.  Given that and my licensing, there is nothing stopping a company
+producing a proprietary DAW from adding in the capabilities to their DAW
+to work with my server.  In fact, I welcome them to do so.  Given that the DAWs
+in question *are* proprietary, however, I do not have access to the code and
+thus cannot make patches for proprietary DAWs like I can for the Open Source
+DAWs.
+
+##Q. What is the current status of this project?
 
 This project is still very much in the very beginning stages of development,
 with a lot more brainstorming to do.  My plan is to get all the things that
@@ -38,7 +49,7 @@ I still need to do logged into the issue tracker (even though they're not
 technically issues), so that anyone can track my progress that way.
 
 
-#Q. What language are you writing this in?
+##Q. What language are you writing this in?
 
 Although I know C/C++ best, and most audio software is actually written in 
 C/C++, I'm actually writing this in Haskell.  I started learning Haskell for
@@ -51,7 +62,7 @@ ones best suited for the job and my skillset has already helped me with getting
 a firmer grasp on the language.
 
 
-#Q. Can I help?
+##Q. Can I help?
 
 Sure thing!  I don't have a dedicated IRC channel set up for this endeavor as
 of yet, but if there's enough interest, that's obviously easy to set up.  For
@@ -61,7 +72,7 @@ interested in helping with, and we can discuss how best you can help out in
 that area.
 
 
-#Q.  Can I donate?
+##Q.  Can I donate?
 
 At this point in time, not monetarily.  I don't have anything set up to receive
 donations.  I do plan on utilizing Snowdrift.coop (http://www.snowdrift.coop)
