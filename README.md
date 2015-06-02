@@ -1,3 +1,6 @@
+For updated blogs, a discussion board, and ticket statuses, please visit to
+https://snowdrift.coop/p/osm-server
+
 ##Q. What is the vision of OSM Server?
 
 First of all, despite the same acronym, OSM Server has nothing to do with Open
