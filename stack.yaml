@@ -1,0 +1,9 @@
+flags: {}
+packages:
+- '.'
+extra-deps:
+- blaze-builder-0.4.0.1
+- data-binary-ieee754-0.4.4
+- hosc-0.15
+- network-2.6.2.0
+resolver: ghc-7.10
