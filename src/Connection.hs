@@ -2,7 +2,8 @@
 
 module Connection where
 
-import Data.ByteString
+-- import Data.ByteString hiding (unpack)
+import Data.ByteString.Char8
 import Data.Conduit
 import Data.Conduit.List as CL
 import Data.Conduit.Network
@@ -12,8 +13,8 @@ mainloop :: IO ()
 mainloop = do
     let config = tlsConfig "*"
                            5280
-                           (programDir ++ "ssl/osm-server.crt")
-                           (programDir ++ "ssl/osm-server.key")
+                           (programDir ++ "ssl/osm-server-cert.pem")
+                           (programDir ++ "ssl/osm-server-key.pem")
     runTCPServerTLS config threadLoop
 
 
