@@ -1,0 +1,11 @@
+#OSM (Open Source Media) Server
+
+## Server/API Structure
+
+Similar to GitHub's format, where the structure is https://server/project, the structure for the OSM server shall be https://server/artist/songtitle.  Each song will be its own repository.
+
+* Question 1: Do we want the api to be integrated into the front-end server so that the API URL would be e.g. https://server/artist/songtitle/submit and https://server/artist/songtitle/download *OR* do we want the API to be a subdomain, e.g. https://api.server/artist/songtitle/submit and https://server/artist/songtitle/download?
+
+* Question 2: Message Storage: I was thinking two possible approaches to storing the messages.
+	- Since a lot of functionality we need is similar to git anyway, we could use git on the backend to keep track of the messages and the changes.  I'm not sure if git can work within a database at all, so this would mean that a lot of our information will be outside of a database in folders, which could be the same layout as the URLs: ./artist/songtitle
+	- Because there is a lot of git functionality we don't need, perhaps we can just set up a database structure to store the messages in and hand write the git-like funtionality we need?  (push, pull, merge/pull request cherry-pick of merge/pull requests, branches? any others?)
